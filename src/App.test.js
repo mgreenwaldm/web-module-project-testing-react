@@ -9,5 +9,14 @@ test('target dropdown', async ()=>{
         const placeholder = screen.queryAllByPlaceholderText('Select an option');
         console.log(placeholder);
     });
-    
+
+    test('target dropdown', async ()=>{
+        render(<App/>);
+
+        await waitFor(()=>{
+            const placeholder = screen.queryAllByPlaceholderText('Select an option');
+            console.log(placeholder);
+        });
+
+    });
 });
